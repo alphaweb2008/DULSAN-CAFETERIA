@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  /* Rosa grisáceo CON un toque más de rosa */
+  --color-rose-muted: #c9959b;
+  --color-rose-muted-light: #f0e0e3;
+  --color-rose-muted-dark: #a87880;
+  /* Celeste grisáceo CON un toque más de turquesa */
+  --color-sky-muted: #7fb3bf;
+  --color-sky-muted-light: #daeef3;
+  --color-sky-muted-dark: #5a949f;
+}
+
+/* Custom animations */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes blob {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-blob {
+  animation: blob 7s ease-in-out infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.3s ease-out;
+}
+
+/* Hide scrollbar for category filters */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Better image loading */
+img { image-rendering: auto; }
+
+/* Muted gradient text — rosa-gris to celeste-gris con más color */
+.text-gradient-muted {
+  background: linear-gradient(135deg, #a87880, #5a949f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Soft shadow */
+.shadow-soft {
+  box-shadow: 0 4px 24px -4px rgba(168, 120, 128, 0.15), 0 2px 8px -2px rgba(90, 148, 159, 0.10);
+}
