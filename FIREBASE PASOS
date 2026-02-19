@@ -132,6 +132,7 @@ C:\Users\andre\DULSAN CAFETERIA fire>npm run build
 vite v7.2.4 building client environment for production...
 ✓ 1750 modules transformed.
 [plugin vite:singlefile]
+firebase projects:list---------
 
 [plugin vite:singlefile] Inlining: index-CfqDfspQ.js
 [plugin vite:singlefile] Inlining: style-DbiJmZWw.css
