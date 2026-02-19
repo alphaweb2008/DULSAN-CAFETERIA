@@ -1,0 +1,216 @@
+
+ Directorio de C:\Users\andre\DULSAN CAFETERIA fire
+
+18/02/2026  23:26    <DIR>          .
+18/02/2026  23:26    <DIR>          ..
+18/02/2026  23:26    <DIR>          dist
+19/02/2026  02:46             2.371 index.html
+18/02/2026  23:26    <DIR>          node_modules
+18/02/2026  23:23           975.554 package-lock.json
+18/02/2026  23:23               743 package.json
+18/02/2026  23:17    <DIR>          public
+18/02/2026  23:17    <DIR>          src
+19/02/2026  02:46               681 tsconfig.json
+19/02/2026  02:46               538 vite.config.ts
+               5 archivos        979.887 bytes
+               6 dirs  194.165.698.560 bytes libres
+
+C:\Users\andre\DULSAN CAFETERIA fire>firebase init hosting
+(node:14552) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\andre
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+√ Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+
+i  Using project dulsan-cafeteria-12959 (DULSAN-CAFETERIA) .
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+√ What do you want to use as your public directory? dist
+√ Configure as a single-page app (rewrite all urls to /index.html)? Yes
+√ Set up automatic builds and deploys with GitHub? No
+i  dist/index.html is unchanged
+
++  Wrote configuration info to firebase.json
++  Wrote project information to .firebaserc
+
++  Firebase initialization complete!
+
+C:\Users\andre\DULSAN CAFETERIA fire>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 0AAF-DF55
+
+ Directorio de C:\Users\andre\DULSAN CAFETERIA fire
+
+18/02/2026  23:29    <DIR>          .
+18/02/2026  23:29    <DIR>          ..
+18/02/2026  23:26    <DIR>          dist
+19/02/2026  02:46             2.371 index.html
+18/02/2026  23:26    <DIR>          node_modules
+18/02/2026  23:23           975.554 package-lock.json
+18/02/2026  23:23               743 package.json
+18/02/2026  23:17    <DIR>          public
+18/02/2026  23:17    <DIR>          src
+19/02/2026  02:46               681 tsconfig.json
+19/02/2026  02:46               538 vite.config.ts
+               5 archivos        979.887 bytes
+               6 dirs  194.163.757.056 bytes libres
+
+C:\Users\andre\DULSAN CAFETERIA fire>firebase --version
+15.6.0
+
+C:\Users\andre\DULSAN CAFETERIA fire>echo {"projects":{"default":"dulsan-cafeteria-12959"}} > .firebaserc
+
+C:\Users\andre\DULSAN CAFETERIA fire>echo {"hosting":{"public":"dist","ignore":["firebase.json","**/node_modules/**"],"rewrites":[{"source":"**","destination":"/index.html"}]}} > firebase.json
+
+C:\Users\andre\DULSAN CAFETERIA fire>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 0AAF-DF55
+
+ Directorio de C:\Users\andre\DULSAN CAFETERIA fire
+
+18/02/2026  23:33    <DIR>          .
+18/02/2026  23:33    <DIR>          ..
+18/02/2026  23:32                52 .firebaserc
+18/02/2026  23:26    <DIR>          dist
+18/02/2026  23:33               137 firebase.json
+19/02/2026  02:46             2.371 index.html
+18/02/2026  23:26    <DIR>          node_modules
+18/02/2026  23:23           975.554 package-lock.json
+18/02/2026  23:23               743 package.json
+18/02/2026  23:17    <DIR>          public
+18/02/2026  23:17    <DIR>          src
+19/02/2026  02:46               681 tsconfig.json
+19/02/2026  02:46               538 vite.config.ts
+               7 archivos        980.076 bytes
+               6 dirs  194.161.786.880 bytes libres
+
+C:\Users\andre\DULSAN CAFETERIA fire>npm install
+
+up to date, audited 2090 packages in 30s
+
+199 packages are looking for funding
+  run `npm fund` for details
+
+172 vulnerabilities (9 low, 86 moderate, 72 high, 5 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\andre\DULSAN CAFETERIA fire>npm run build
+
+> react-vite-tailwind@0.0.0 build
+> vite build
+
+vite v7.2.4 building client environment for production...
+✓ 1750 modules transformed.
+[plugin vite:singlefile]
+
+[plugin vite:singlefile] Inlining: index-CfqDfspQ.js
+[plugin vite:singlefile] Inlining: style-DbiJmZWw.css
+dist/index.html  723.43 kB │ gzip: 211.09 kB
+✓ built in 13.65s
+
+√ Preparing the list of your Firebase projects
+┌──────────────────────┬──────────────────────────────────┬────────────────┬──────────────────────┐nd alternative instea
+│ Project Display Name │ Project ID                       │ Project Number │ Resource Location ID │
+├──────────────────────┼──────────────────────────────────┼────────────────┼──────────────────────┤
+│ CAFETERIA PRUEVA     │ cafeteria-prueva-d085e           │ 1021253954759  │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────┼────────────────┼──────────────────────┤
+│ DULSAN-CAFETERIA     │ dulsan-cafeteria-12959 (current) │ 556796477469   │ [Not specified]      │
+├──────────────────────┼──────────────────────────────────┼────────────────┼──────────────────────┤
+│ restaurante          │ restaurante-452a3                │ 1046112281296  │ [Not specified]      │
+└──────────────────────┴──────────────────────────────────┴────────────────┴──────────────────────┘
+
+3 project(s) total.
+
+C:\Users\andre\DULSAN CAFETERIA fire>firebase use 556796477469
+(node:15588) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Now using project 556796477469
+
+C:\Users\andre\DULSAN CAFETERIA fire>firebase init hosting
+(node:18844) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\andre\DULSAN CAFETERIA fire
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+√ Are you ready to proceed? Yes
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+
+i  Using project dulsan-cafeteria-12959 (DULSAN-CAFETERIA) .
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+√ What do you want to use as your public directory? dist
+√ Configure as a single-page app (rewrite all urls to /index.html)? Yes
+√ Set up automatic builds and deploys with GitHub? No
+√ File dist/index.html already exists. Overwrite? No
+i  Skipping write of dist/index.html
+
++  Wrote configuration info to firebase.json
++  Wrote project information to .firebaserc
++  Wrote .gitignore
+
++  Firebase initialization complete!
+
+C:\Users\andre\DULSAN CAFETERIA fire>firebase deploy --only hosting
++  hosting[dulsan-cafeteria-12959]: file upload complete
+i  hosting[dulsan-cafeteria-12959]: finalizing version...
++  hosting[dulsan-cafeteria-12959]: version finalized warning was created)
+i  hosting[dulsan-cafeteria-12959]: releasing new version...
++  hosting[dulsan-cafeteria-12959]: release complete
+
++  Deploy complete!g
+i  hosting[dulsan-cafeteria-12959]: beginning deploy...
+Project Console: https://console.firebase.google.com/project/dulsan-cafeteria-12959/overview
+Hosting URL: https://dulsan-cafeteria-12959.web.app
+
+C:\Users\andre\DULSAN CAFETERIA fire>
