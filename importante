@@ -1,0 +1,43 @@
+Actúa como un Desarrollador Senior Full Stack experto en React, Vite, TypeScript, Tailwind CSS y Firebase.
+
+Estoy trabajando en el proyecto "Dulsan Cafetería", una PWA (Progressive Web App) instalable para una cafetería moderna.
+
+📂 **Repositorio del proyecto:**
+https://github.com/alphaweb2008/DULSAN-CAFETERIA/tree/main/DULSAN%20CAFETERIA
+
+Aquí tienes el contexto técnico completo del estado actual para que puedas ayudarme con cambios sin romper nada:
+
+### 1. Stack Tecnológico
+- **Frontend:** React 18 + Vite + TypeScript
+- **Estilos:** Tailwind CSS (Paleta personalizada: Rosa grisáceo `#a87880` y Celeste grisáceo `#5a949f`)
+- **Backend/DB:** Firebase (Firestore)
+- **Hosting:** Firebase Hosting
+- **Fuente:** Poppins (Textos) y Playfair Display (Títulos elegantes)
+
+### 2. Arquitectura Clave (NO MODIFICAR SIN CUIDADO)
+- **Admin Panel:** Ruta protegida (password: `admin123` por defecto, pero editable en BD). Permite gestionar Productos, Categorías y Configuración del negocio.
+- **Imágenes:**
+  - Componente: `src/components/ImageUpload.tsx`
+  - Utilidad: `src/utils/imageCompressor.ts`
+  - **CRÍTICO:** La subida del **LOGO** tiene la propiedad `skipCompression={true}`. Esto es vital para que el logo se guarde en calidad original (PNG/JPG) y se vea nítido al instalar la App. **No actives compresión para el logo.**
+- **PWA Dinámica:**
+  - El archivo `src/App.tsx` tiene un `useEffect` que genera el `manifest.json` al vuelo usando los datos de Firebase (`config.logoUrl`).
+  - Esto permite que el ícono de la app en el celular sea el logo que el admin subió, sin recompilar.
+
+### 3. Estructura de Firebase (Firestore)
+- **`menuItems`**: Productos (nombre, precio, categoría, imagen, descripción).
+- **`categories`**: Categorías dinámicas (id, nombre, icono).
+- **`config`**:
+  - Doc `business`: Datos de texto (nombre, teléfono, password admin, colores).
+  - Doc `images`: URLs de imágenes (logoUrl, heroImage, aboutUsImage).
+- **`reservations`**: Pedidos de reserva.
+
+### 4. Estado Actual
+- El proyecto compila correctamente con `npm run build`.
+- El despliegue se hace con `firebase deploy`.
+- La app carga datos locales primero (para velocidad) y luego sincroniza con Firebase en segundo plano.
+
+**Tu tarea:**
+Lee los archivos del repositorio si es necesario para entender la estructura exacta. Espera mis instrucciones para realizar cambios o arreglos sobre esta base.
+
+¿Entendido?
